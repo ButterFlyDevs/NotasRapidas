@@ -1,0 +1,25 @@
+<ion-view view-title="Nueva Nota">
+  <ion-content class="padding">
+
+    <div class="list">
+
+      <!--Primer elemento: campo para el título-->
+      <label class="item item-input">
+        <!--Usamos el tag ng-model para poder indentificar el contenido
+        de este elemento y pasárselo a la función saveOnDB() en el botón
+        guardar-->
+        <input type="text" placeholder="Titulo" ng-model="titulo">
+      </label>
+
+      <!--Segundo elemento: campo para el texto-->
+      <label class="item item-input">
+        <textarea placeholder="Texto..." ng-model="texto"></textarea>
+      </label>
+
+    </div>
+
+    <button class="button button-block button-balanced" ng-click="insert(titulo, texto)">Guardar</button>
+    <button class="button button-block button-assertive">Cancelar</button>
+
+  </ion-content>
+</ion-view>
