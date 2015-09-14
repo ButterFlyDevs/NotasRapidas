@@ -62,6 +62,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   })
 
   .state('tab.chats', {
+      //Horas y horas de trabajo para esto:
+      cache: false,
       url: '/chats',
       views: {
         'tab-chats': {
