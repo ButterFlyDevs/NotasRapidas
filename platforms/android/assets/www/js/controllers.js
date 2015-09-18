@@ -22,6 +22,7 @@ angular.module('starter.controllers', [])
             console.error(err);
         });
     }
+    
 
 
 
@@ -59,7 +60,6 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AccountCtrl', function($scope) {
-  $scope.mierda="mierda";
 }
 
 
